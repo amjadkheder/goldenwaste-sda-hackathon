@@ -76,7 +76,18 @@
             <version>3.6.0</version>
         </dependency>
 	</dependencies>
-
+    <distributionManagement>
+        <repository>
+          <id>nexus</id>
+          <name>Releases</name>
+          <url>http://ec2-34-224-168-18.compute-1.amazonaws.com/:8081/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+          <id>nexus</id>
+          <name>Snapshot</name>
+          <url>http://ec2-34-224-168-18.compute-1.amazonaws.com/:8081/repository/maven-snapshots</url>
+        </snapshotRepository>
+      </distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
